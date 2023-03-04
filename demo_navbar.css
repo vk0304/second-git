@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+}
+
+.firstHeader{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    float: left;
+    
+}
+
+.firstPart{
+    display: flex;
+    padding: 15px;
+    margin-left: 30px;
+
+
+}
+
+.phone{
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 4px;
+}
+
+.secondPart{
+    float: left;
+    padding: 15px;
+}
+
+.icons i{
+    margin-left: 10px;
+}
+
+
+
+
+/* css of content part */
+
+.mainbody{
+    height: 250px;
+    background-color: beige;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /*  to create space between and around the divs */
+    gap: 20px;
+    padding: 15px;
+}
+
+
+.cards{
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+#card1{
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;  /* so that backrgound not repeated */
+    background-size: 100% 100vh; /* view height(vh) = when your height is not 100% so we use 100vh */
+}
+#card2{
+    background-image: url(nature.jpeg);
+    background-repeat: no-repeat;  /* so that backrgound not repeated */
+    background-size: 100% 100vh; /* view height(vh) = when your height is not 100% so we use 100vh */
+}
+#card3{
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;  /* so that backrgound not repeated */
+    background-size: 100% 100vh; /* view height(vh) = when your height is not 100% so we use 100vh */
+}
+
+.cards_child{
+    height: 40px;
+    width: 110px;
+    background-color: aliceblue;
+    margin: auto;
+    transition: 1s; /* for making the effect according to time */
+}
+
+
+
+
+#cards_child1:hover{
+    transform: rotate(90deg);
+
+}
+
+#cards_child2:hover{
+    transform: translate(10px , -40px);
+}
+
+#cards_child3:hover{
+    transform: skew(90deg);
+}
+
+/* 
+properties of flex
+
+gap: 15px;
+justify-content: space between; */
+
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="demo_navbar.css">
+
+</head>
+
+<body>
+    <div class="firstHeader">
+        <div class="firstPart">
+            <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="">hello.colorlib@gmail.com</a>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <a href="">+ 65 11.188.888</a>
+            </div>
+        </div>
+
+        <div class="secondPart">
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+
+
+    <!-- now the content part -->
+
+    <div class="mainbody">
+        <div class="cards" id="card1">
+
+            <div class="cards_child" id="cards_child1">Factory
+                <div class="expand_border" style="width: 110px; height: 40px;"></div>
+            </div>
+
+        </div>
+        <div class="cards" id="card2">
+            <div class="cards_child" id="cards_child2">
+                <div class="expand_border" style="width: 110px; height: 40px;"></div>
+            </div>
+        </div>
+        <div class="cards" id="card3">
+            <div class="cards_child" id="cards_child3">
+                <div class="expand_border" style="width: 110px; height: 40px;"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $(".cards").mouseenter(function(){
+                // $(".expand_border").css({"transform":"scale(1.7)" , "border":"5px solid black" , "transition":"1s"});  this method can't be used because it do the work in all others when hovering on one div
+
+                $(this).closest(".cards").find(".expand_border").css({"transform":"scale(1.7)" , "border":"5px solid black" , "transition":"1s"});
+
+            });
+
+            $(".cards").mouseleave(function(){
+                $(".expand_border").css({"transform":"scale(0)" , "border":"0px solid black" , "transition":"1s"}); 
+            });  
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>
